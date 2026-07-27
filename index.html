@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>Paste Budget</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Paste's Personal Budget Manager</h1>
+		<span>I'm not stylizing this</span>
+		<div class="gnral-container">
+			<div class="bar" id="bar"></div>
+			<div class="add">
+				<h2 id="title">Add Element</h2>
+				<div class="addform">
+					<h1>
+					<input type="text" placeholder="Name" id="name">
+					<br><input type="number" id="num">
+					<select id="method">
+						<option value="per">%</option>
+						<option value="mon">$</option>
+					</select>
+					<input type="button" value="Add" onclick="add()">
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html> 
