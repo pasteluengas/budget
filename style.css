@@ -1,20 +1,14 @@
+.container {
+	margin: 50px;
+}
+
 .bar {
 	width: 100px;
 	height: 400px;
-	margin: 50px;
-	border: 10px black solid;
+	border: 6px black solid;
 }
 
-.add {
-	margin: 50px;
-}
-
-.gnral-container {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.add {
+.form-container {
 	border: 2px black solid;
 	max-height: 200px;
 	padding: 20px;
@@ -23,4 +17,14 @@
 .amount {
 	width: 100%;
 	color: white;
+}
+
+.fuck-soan {
+	margin: 20px;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
 }

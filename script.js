@@ -1,10 +1,13 @@
 let total = prompt("Enter full ammout");
+if (!total) total = 100;
 let percentageused = 0;
+let totalused = 0;
 
 let colors = ["red", "green", "blue"];
 let currentcolor = 0;
 const bar = document.getElementById("bar");
 
+document.getElementById("total").innerHTML = total;
 
 function newColor() {
 	if (currentcolor == 2) {
@@ -38,4 +41,12 @@ function add() {
 	percentageused = percentageused + parseInt(toAdd);
 
 	bar.append(newammount);
+
+	document.getElementById("remaining").innerHTML = `${(total-(percentageused/100)*total)} (${100-percentageused}%)`;
+	document.getElementById("using").innerHTML = `${(percentageused/100)*total} (${percentageused}%)`;
+	
+	newammount.addEventListener("click", (e) => {
+	document.getElementById("span").innerHTML = `${e.currentTarget.innerHTML} <br> Value: $${(toAdd/100)*total} (${toAdd}%)`;
+	});
+	
 }
